@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous" />
+    <title>Aviwe's Recipe Website</title>
   </head>
   <body>
     <header>
       <div class="container">
         <h1 class="logo">Delicious Recipe</h1>
         <nav>
+          <div class="menu-icon">&#9776;</div>
           <ul class="nav-list">
             <li>Home</li>
             <li>About</li>
@@ -25,8 +33,8 @@
         <h2>Welcome to our Recipe Collection!</h2>
         <p>Search mouth watering recipes to satisfy your cravings</p>
         <form action="#" class="search-box">
-          <input type="text" placeholder="Search Recipe" />
-          <button type="submit">Search</button>
+          <input type="text" placeholder="Search Recipe" class="searchBox" />
+          <button type="submit" class="searchBtn">Search</button>
         </form>
       </div>
     </section>
@@ -40,10 +48,7 @@
             chocolate dessert recipe, chocolate layered dessert, dessert recipe,
             easy to make, Forticreme, sweet treat.
           </p>
-          <a
-            href="https://nutricia.com.au/fortisip/recipes/chocolate-layered-sweet-treat/"
-            >View Recipe</a
-          >
+          <a href="#">View Recipe</a>
         </div>
         <div class="recipe-card">
           <img src="images/chedeer-biscuit.jpg" alt="" />
@@ -52,10 +57,7 @@
             These cheesy salty buttery biscuits are the perfect,Serve with eggs
             and your favorite bacon.
           </p>
-          <a
-            href="https://whatsgabycooking.com/wprm_print/garlic-and-herb-parmesan-biscuits"
-            >View Recipe</a
-          >
+          <a href="#">View Recipe</a>
         </div>
         <div class="recipe-card">
           <img src="images/mango-smoothie.jpg" alt="" />
@@ -65,9 +67,7 @@
             and creamy, with a sweet, tangy tropical flavor and the cheeriest
             color around.
           </p>
-          <a href="https://www.loveandlemons.com/mango-smoothie/"
-            >View Recipe</a
-          >
+          <a href="#">View Recipe</a>
         </div>
         <div class="recipe-card">
           <img src="images/Canjun-Beef-Pasta.jpg" alt="" />
@@ -79,11 +79,43 @@
           <a href="#">View Recipe</a>
         </div>
       </div>
+      <div class="recipe-details">
+        <button type="button" class="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="recipe-details-content"></div>
+      </div>
     </section>
+    <div class="details">
+      <h2>About us</h2>
+      <p>
+        Welcome to Delicious Recipes! We’re dedicated to bringing you a
+        collection of mouthwatering recipes that celebrate the joy of cooking.
+        Whether you’re looking for healthy meals, comfort food, or unique dishes
+        to impress your friends, we’ve got something for everyone. Our goal is
+        to make cooking fun and approachable, with simple steps and fresh
+        ingredients. Join us on this delicious adventure, and let’s create
+        memorable meals together!We’re a team of food lovers passionate about
+        sharing easy and delicious recipes for everyone to enjoy. Whether you're
+        a beginner or a seasoned chef, our goal is to inspire you to create
+        tasty meals at home. Dive in and discover your next favorite dish with
+        us! Happy cooking!
+      </p>
+    </div>
+    <div class="details">
+      <h2>Contact Us</h2>
+      <i class="fas fa-phone">+123 456 789</i>
+      <br />
+      <i class="fas fa-envelope">deliciousrecipe@gmail.com</i>
+    </div>
+
     <footer>
       <div>
         <p>&copy; 2024 Delicious Recipes</p>
+        <br />
+        <p>Created by Aviwe Nkambule💜</p>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
